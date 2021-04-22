@@ -7,7 +7,7 @@ result = pyrtl.Output(bitwidth=32, name='result')
 
 fib1=pyrtl.Register(bitwidth=32, name = 'fib1')
 fib2=pyrtl.Register(bitwidth=32, name = 'fib2')
-cycle=pyrtl.Register(bitwidth=1, name = 'fib2')
+cycle=pyrtl.Register(bitwidth=1, name = 'cycle')
 
 with pyrtl.conditional_assignment:
     with cycle==0:
