@@ -17,7 +17,7 @@ with pyrtl.conditional_assignment:
         result |= A 
 
     with cycle !=0:
-        fib.next |= fib2
+        fib1.next |= fib2
         fib2.next |= fib1+fib2
         result |= fib2
 
