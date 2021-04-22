@@ -21,7 +21,7 @@ with pyrtl.conditional_assignment:
         fib2.next |= fib1+fib2
         result |= fib2
 
-sim trace = pyrtl.SimulationTrace()
+sim_trace = pyrtl.SimulationTrace()
 sim = pyrtl.Simulation(tracer = sim_trace)
 
 import random
