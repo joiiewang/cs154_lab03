@@ -13,7 +13,7 @@ with pyrtl.conditional_assignment:
     with cycle==0:
         fib1.next |= A
         fib2.next |= B 
-        cycle.enxt |=1
+        cycle.next |=1
         result |= A 
 
     with cycle !=0:
